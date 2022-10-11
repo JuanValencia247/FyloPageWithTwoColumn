@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <!-- Incos -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+
+  <header class="header-container">
+    <nav class="nav-container">
+      <div class="nav-container__logo">
+        <img class="nav-container__logo-img" src="./images/logo.svg" alt="logo">
+      </div>
+      <ul class="nav-container__logo-ul">
+        <li>Features</li>
+        <li>Team</li>
+        <li>Sign In</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <section class="section-container1">
+      <div class="section-container1__content">
+        <img class="section-container1__content-img" src="./images/illustration-1.svg" alt="ilustracion1">
+      </div>
+
+      <div class="section-container1__header">
+        <h1 class="section-container1__header-title">All your files in one secure location, accessible anywhere.</h1>
+        <p class="section-container1__header-description">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+        <div class="section-container1__header-content">
+          <div class="section-container1__header-content-input">
+            <input id="email" class="section-container1__header-content-email" type="text" placeholder="Enter ypur email">
+            <p id="error" class="section-container1__header-content-error"></p>
+          </div>
+          <button id="button" class="section-container1__header-content-button">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container2">
+      <div class="section-container2__illustration">
+        <img class="section-container2__illustration-img" src="./images/illustration-2.svg" alt="ilustracion2">
+      </div>
+
+      <div class="section-container2__content">
+        <div class="section-container2__content1">
+          <h2 class="section-container2__content1-subtitle">Stay productive, wherever you are</h2>
+          <p class="section-container2__content1-description">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+          <p class="section-container2__content1-description">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+            <a class="section-container2__content1-link" href="#">See how Fylo works <img class="section-container2__content1-icon" src="./images/icon-arrow.svg" alt="arrow"></a>
+        </div>
+
+        <div class="section-container2__content2">
+          <img class="section-container2__content2-img" src="./images/icon-quotes.svg" alt="quotes">
+            <p class="section-container2__content2-description">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+          <div class="section-container2__content2-avatar">
+            <img class="section-container2__content2-avatar-img" src="./images/avatar-testimonial.jpg" alt="avatar">
+            <div class="section-container2__content2-avatar-cont">
+              <p class="section-container2__content2-avatar-cont-name"> Kyle Burton</p>
+              <p class="section-container2__content2-avatar-cont-des">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container3">
+      <div class="section-container3__content1">
+        <h2 class="section-container3__content1-subtitle">Get early access today</h2>
+        <p class="section-container3__content1-description"> It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+      </div>
+
+      <div class="section-container3__content2">
+        <input class="section-container3__content2-email" type="text" placeholder="Enter your email">
+        <p  class="section-container3__content2-error">Please check you email</p>
+        <button  class="section-container3__content2-button">Get Started For Free</button>
+      </div>
+    </section>
+
+    <section class="sectionFooter-container">
+      <div class="sectionFooter-container__content1">
+        <img class="sectionFooter-container__content1-logo" src="./images/logo-white.svg" alt="logo">
+      </div>
+
+      <div class="sectionFooter-container__content2">
+        <div class="sectionFooter-container__content2-data">
+          <p class="sectionFooter-container__content2-data-p"><img class="sectionFooter-container__content2-data-p-img" src="./images/icon-phone.svg" alt="phone"> Phone: +1-543-123-4567</p>
+          <p class="sectionFooter-container__content2-data-p"><img class="sectionFooter-container__content2-data-p-img" src="./images/icon-email.svg" alt="email"> example@fylo.com</p>
+        </div>
+
+        <div class="sectionFooter-container__content2-about">
+          <p class="sectionFooter-container__content2-about-p">About Us</p>
+          <p class="sectionFooter-container__content2-about-p">Jobs</p>
+          <p class="sectionFooter-container__content2-about-p">Press</p>
+          <p class="sectionFooter-container__content2-about-p">Blog</p>
+        </div>
+
+        <div class="sectionFooter-container__content2-contact">
+          <p class="sectionFooter-container__content2-contact-p">Contact Us</p>
+          <p class="sectionFooter-container__content2-contact-p">Terms</p>
+          <p class="sectionFooter-container__content2-contact-p">Privacy</p>
+        </div>
+
+        <div class="sectionFooter-container__content2-icons">
+          <a class="sectionFooter-container__content2-icons-a" href="#"><i class='bx bxl-facebook'></i></a>
+          <a class="sectionFooter-container__content2-icons-a" href="#"><i class='bx bxl-twitter'></i></a>
+          <a class="sectionFooter-container__content2-icons-a" href="#"><i class='bx bxl-instagram' ></i></a>
+        </div>
+      </div>
+    
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#" target="_blank">JC</a>.
+    </p>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@use 'variables' as v;
+
+@mixin desktop-view ($width: 1440px, $height: unset, $fz: unset){
+    @media (min-width: 1440px){
+        width: $width;
+        height: $height;
+        font-size: $fz;
+    }
+}
+@mixin button {
+    background-color: v.$Bright-Blue;
+    color: v.$Light-Grayish-Blue;
+    font-family: v.$Font-Raleway;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: .9em;
+    border: none;
+    &:hover{
+        cursor: pointer;
+        filter: brightness(120%);
+    }
+}
+
+@mixin illustrationDesktop {
+    @media (min-width: 1440px){
+        width: 640px;
+    }
+}
+
+@mixin section ($gap, $reverse: false) {
+    @media (min-width: 1440px){
+        display: flex;
+        @if $reverse == true {
+            flex-direction: row-reverse;
+        }
+        
+        align-items: center;
+        gap: $gap;
+    }
+}
